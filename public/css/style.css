@@ -1,0 +1,527 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+    font-family: josefin sans;
+}
+
+.navbar{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+
+.brand-title img{
+    width: 100px;
+    height: auto;
+    margin: 0 25px;
+}
+
+.navbar-links ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li{
+    list-style: none;
+}
+
+.navbar-links li a{
+    text-decoration: none;
+    color: #008EFF;
+    padding: 30px;
+    display: block;
+    transition: all .3s ease;
+}
+
+.navbar-links li a:hover{
+    background-color: #008EFF;
+    color: #fff;
+}
+
+.home.active{
+    background-color: #008EFF;
+    color: #fff;
+}
+
+.about.active{
+    background-color: #008EFF;
+    color: #fff;
+}
+
+.contact.active{
+    background-color: #008EFF;
+    color: #fff;
+}
+
+.toggle-button{
+    position: absolute;
+    top: 20px;
+    right: 1rem;
+    display: flex;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: #008EFF;
+    border-radius: 10px;
+}
+
+@media (max-width: 800px){
+    .toggle-button{
+        display: flex;
+    }
+
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links{
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul{
+        width: 100%;
+        flex-direction: column;
+        /* display: none; */
+    }
+
+    .navbar-links li{
+        text-align: center;
+    }
+
+    .navbar-links li a{
+        padding: .5rem 1rem;
+    }
+}
+
+.active{
+    display: block;
+}
+
+
+
+.first{
+    /* background-color: chartreuse; */
+    height: 100%;
+    padding: 60px 0;
+}
+
+.mainContent{
+    padding: 50px 40px;
+}
+
+.mainContent h1,h2{
+    color: #008EFF;
+}
+
+.mainContent h2{
+    font-weight: 400;
+}
+
+.mainContent h1{
+    font-size: 5rem;
+}
+
+.mainContent .scale{
+    color: #F88700;
+}
+
+.mainContent .btn{
+    padding: 8px 16px; 
+    background-color: #008EFF;
+    color: white;
+    border: none;
+    font-size: 1.1rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.mainContent .btn:hover{
+    background-color: #0062d1;
+    transition: all .3s ease;
+}
+
+.mainContent img{
+    width: 500px;
+    height: auto;
+    float: right;
+    margin: -250px 100px;
+}
+
+.first .clients{
+    margin: 20px 40px;
+}
+
+.first .clients h1{
+    font-size: 1.3rem;
+    color: #5D5D5D;
+}
+
+.first .clients img{
+    width: 100px;
+    height: auto;
+    padding: 10px 5px;
+}
+
+.second{
+    background-color: #f7fcff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    line-height: 30px;
+}
+
+.second h2{
+    font-size: 2rem;
+}
+
+.second h2,h5,.about{
+    color: #5D5D5D;
+}
+
+.second .about{
+    width: 500px;
+    text-align: center;
+}
+
+.services{
+    margin: 50px;
+    display: flex;
+    gap: 30px;
+}
+
+.services .web{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 30px 20px;
+    border-radius: 20px;
+}
+
+.services h3,p{
+    font-size: 1.3rem;
+    color: #5D5D5D;
+}
+
+.services img{
+    width: 100px;
+    height: auto;
+}
+
+.services p{
+    width: 250px;
+    font-weight: 400;
+}
+
+.services .app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 30px 20px;
+    border-radius: 20px;
+}
+
+.services .data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 30px 20px;
+    border-radius: 20px;
+}
+
+.services .consulting{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 30px 20px;
+    border-radius: 20px;
+}
+
+.quote{
+    background-color: #008EFF;
+    height: 300px;
+    width: 700px;
+    display: flex;
+    /* flex-direction: column; */
+    margin: 50px 25%;
+    border-radius: 20px;
+}
+
+.quoteInfo{
+    margin: 60px 40px;
+}
+
+.quoteInfo .btn{
+    padding: 8px 12px;
+    font-size: 1.2rem;
+    border: none;
+    background-color: #F88700;
+    color: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.quoteInfo .btn:hover{
+    background-color: #ffaa01;
+    transition: all .3s ease;
+}
+
+.quoteInfo h2{
+    color: #fff;
+    font-size: 2rem;
+    padding: 10px;
+}
+
+.quoteImg img{
+    width: 300px;
+    height: auto;
+    float: right;
+    margin: -50px 300px;
+}
+
+
+/* About */
+.aboutFirst{
+    display: flex;
+    /* border: 2px solid red; */
+    height: 500px;
+}
+
+.info{
+    margin: 50px;
+}
+
+.aboutFirst .info h1{
+    color: #008EFF;
+    font-weight: bolder;
+    font-size: 5rem;
+}
+
+.aboutFirst .info .scale{
+    color: #F88700;
+    font-weight: bolder;
+}
+
+.aboutFirst .info p{
+    width: 600px;
+}
+
+.aboutFirst img{
+    width: 600px;
+    height: auto;
+    margin: 20px 0;
+}
+
+.aboutSecond{
+    /* border: 2px solid yellow; */
+    padding: 50px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutSecond h1{
+    color: #008EFF;
+    position: absolute;
+    font-size: 3rem;
+}
+
+.aboutSecond img{
+    position: relative;
+    width: 500px;
+    height: auto;
+}
+
+.aboutSecond p{
+    width: 600px;
+    line-height: 30px;
+}
+
+.aboutSecond span{
+    font-weight: bolder;
+}
+
+.work{
+    /* border: 2px solid brown; */
+    padding: 50px 0;
+}
+
+.work .aboutWork{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+
+.work .aboutWork p{
+    font-size: 4rem;
+    color: #008EFF;
+    font-weight: bolder;
+}
+
+.work .aboutWork span{
+    color: #F88700;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.team{
+    background-color: #e1f1fa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 230%;
+    padding: 50px 0;
+}
+
+.team h1{
+    font-size: 2.5rem;
+    color: #008EFF;
+}
+
+.team .uneeb{
+    margin: 100px 0;
+    display: flex;
+}
+
+.allTeam{
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+}
+
+.team .uneeb .myImg{
+    background-color: rgb(255, 255, 255);
+    width: 220px;
+    height: 220px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+.team .uneeb .myImg img{
+    width: 200px;
+    height: auto;
+    padding: 12px 10px;
+    border-radius: 15px;
+}
+
+.team .aboutUneeb{
+    margin: 5px 50px;
+}
+
+.team .aboutUneeb h3, h4, p{
+    color: #5D5D5D;
+    line-height: 30px;
+}
+
+.team .aboutUneeb h3{
+    font-size: 2rem;
+}
+
+.team .aboutUneeb h4{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.team .aboutUneeb p{
+    width: 350px;
+}
+
+.team .aboutUneeb span{
+    font-weight: bolder;
+}
+
+.contactFirst{
+    display: flex;;
+}
+
+.contactFirst .contactImg{
+    margin: 5px 0;
+}
+
+.contactFirst .contactImg img{
+    width: 600px;
+    height: auto;
+}
+
+.contactInfo{
+    display: flex;
+    flex-direction: column;
+}
+
+.contactFirst .mainContent .contactInfo h1{
+    font-size: 3rem;
+}
+
+.checkBox{
+    margin-top: 30px;
+    color: #5D5D5D;
+}
+
+.checkBox input{
+    margin: 10px 10px;
+}
+
+.form form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.form form input, textarea{
+    margin: 20px 0;
+    padding: 13px 20px;
+    border: 1.2px solid #008EFF;
+    border-radius: 20px;
+    color: #5D5D5D;
+    outline: none;
+}
+
+.button{
+    margin: 10px 0;
+    padding: 15px 18px;
+    background-color: #008EFF;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: #0062d1;
+    transition: all .3s ease;
+}

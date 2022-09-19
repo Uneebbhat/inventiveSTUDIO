@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/phone.css" media="screen and (max-width: 1200px)">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <title>inventiveSTUDIO | Contact</title>
+</head>
+
+<body>
+  <nav class="navbar" data-aos="fade-down">
+    <div class="brand-title">
+      <a href="index.html">
+        <img src="img/logo.png" alt="">
+      </a>
+    </div>
+    <a href="#" class="toggle-button">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </a>
+    <div class="navbar-links active">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="contact active">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="contactFirst">
+    <div class="contactImg" data-aos="fade-right">
+      <img src="img/contact.jpg" alt="">
+    </div>
+
+    <div class="mainContent" data-aos="fade-left">
+      <div class="contactInfo">
+        <h1>What would you like to do?</h1>
+      </div>
+
+      <div class="checkBox">
+        <input type="checkbox" id="webDev"> Web Development
+        <input type="checkbox" id="appDev"> App Development
+        <br>
+        <br>
+        <input type="checkbox" id="data"> Data Engineering
+        <input type="checkbox" id="consult"> Counsulting
+      </div>
+
+      <div class="form">
+        <form action="" id="contactForm">
+          <input type="text" id="name" placeholder="Name" class="input">
+          <input type="email" id="email" placeholder="Email" class="input">
+          <input type="text" id="phone" placeholder="Number" class="input">
+          <textarea id="message" cols="80" rows="10" placeholder="Tell us about your project" class="input"></textarea>
+          <button class="button toggleHide" id="btn">Send us a message</button>
+        </form>
+      </div>
+
+
+    </div>
+  </section>
+
+</body>
+
+<script src="js/script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+<script src="js/mail.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+</html>
